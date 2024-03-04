@@ -10,34 +10,223 @@
       content="Web site created using create-react-app"
     />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
-
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
+    <title>Doggy Food</title>
+    <script
+      src="https://kit.fontawesome.com/0f04683980.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      media="screen and (max-width: 723px)"
+      href="/mobile.css"
+    />
   </head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+    <main>
+      <nav id="navbar">
+        <div class="logo">
+          <h2><a href="index.html">Doggy Food</a></h2>
+        </div>
+        <div class="nav-links">
+          <ul>
+            <li>
+              <a href="index.html" class="current">Home</a>
+            </li>
+            <li><a href="#second">Food</a></li>
+            <li><a href="#forth">Treats</a></li>
+            <li><a href="#fifth">News</a></li>
+            <li>
+              <a href="#"><i class="fa-solid fa-message"></i></a>
+            </li>
+          </ul>
+        </div>
+        <div id="toggle">
+          <div class="menu-hamburger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+          </div>
+        </div>
+      </nav>
+      <div id="main-1">
+        <div id="main-text-part">
+          <h1 id="main-heading">Tasty food for hungry hounds</h1>
+          <button class="del dark-btn"><a href="#">About</a></button>
+        </div>
+        <img class="happy-dog" src="./images/happy-dog.webp" alt="happy-dog" />
+      </div>
+    </main>
+    <section id="first">
+      <h2>Find the perfect food to feed your hungry hound</h2>
+      <div class="pre-wrapper">
+        <div class="wrapper">
+          <div class="select-btn">
+            <span>Your Dog's Breed</span>
+          </div>
+          <div class="content">
+            <div class="search">
+              <input spellcheck="false" type="text" placeholder="Search" />
+            </div>
+            <ul class="options"></ul>
+          </div>
+        </div>
+        <div class="wrapper">
+          <div class="select-btn">
+            <span>Your Dog's Age</span>
+          </div>
+          <div class="content">
+            <select id="ageSelect" name="age">
+            </div>
+            <ul class="options-1">
+              <option value="0-1">0 - 1 years</option>
+              <option value="2-10">2 - 10 years</option>
+              <option value="+10">+10 years</option>
+            </ul>    
+            </select>
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+  
+          </div>
+        </div>
+      </div>
+      <div class="btn-center">
+        <button class="submit-btn light-btn"><a href="#">Next</a></button>
+      </div>
+      <div class="custom-shape-divider-bottom-1701875846">
+        <svg
+          id="svg-wave"
+          data-name="Layer 1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1200 120"
+          preserveAspectRatio="none"
+        >
+          <path
+            d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
+            opacity=".25"
+            class="shape-fill"
+          ></path>
+          <path
+            d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
+            opacity=".5"
+            class="shape-fill"
+          ></path>
+          <path
+            d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
+            class="shape-fill"
+          ></path>
+        </svg>
+      </div>
+    </section>
+    <section id="second">
+      <div class="second-pic">
+        <img src="./images/dog-food.png" alt="dog-food" height="230px" />
+      </div>
+      <div class="second-text-part">
+        <h1>Dry Food</h1>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+          <br />
+          aliquid delectus ducimus eius veniam minima dignissimos consequatur
+          beatae, aspernatur, vero, voluptatem ea quod repudiandae iure
+          repellendus unde consequuntur voluptatum!
+        </p>
+        <button class="dark-btn"><a href="#">food</a></button>
+      </div>
+    </section>
+    <section id="third">
+      <div class="third-text-part">
+        <h2>Why you'll love us...</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+      </div>
+      <img src="./images/natural.png" height="160px" alt="" />
+      <img src="./images/grain-free.png" height="160px" alt="" />
+      <img src="./images/teeth.png" height="160px" alt="" />
+    </section>
+    <section id="forth">
+      <div class="forth-text-part">
+        <h1 id="forth-heading">Scrummy salmon</h1>
+        <p>
+          Our scrummy salmon a sweet potato biscuits helps with your dogs health
+          & digestion
+        </p>
+        <p>
+          This mixture is recommended if your hungry hound has a poor or
+          sensitive digestive system.
+        </p>
+        <div class="forth-btn">
+          <button id="pink" class="dark-btn">
+            <a href="">ADULT</a>
+          </button>
+          <button id="blue" class="dark-btn">
+            <a href="">PUPPY</a>
+          </button>
+        </div>
+      </div>
+      <div class="forth-pic-food">
+        <img id="pinkFood" src="./images/pink-food.png" alt="" height="400px" />
+      </div>
+    </section>
+    <section id="fifth">
+      <h1>On the Blog</h1>
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+      <div id="root"></div>
+    </section>
+    <section id="wave">
+      <div class="custom-shape-divider-bottom-1702473720">
+        <svg
+          data-name="Layer 1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1200 120"
+          preserveAspectRatio="none"
+        >
+          <path
+            d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
+            opacity=".25"
+            class="shape-fill"
+          ></path>
+          <path
+            d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
+            opacity=".5"
+            class="shape-fill"
+          ></path>
+          <path
+            d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
+            class="shape-fill"
+          ></path>
+        </svg>
+      </div>
+    </section>
+    <footer>
+      <div class="all-parts">
+        <div class="one">
+          <h2 class="f-logo"><a href="#">Doggy Food</a></h2>
+          <p>
+            100% natural dog food and treats <br />
+            for hungry hounds
+          </p>
+        </div>
+      </div>
+      <div class="two">
+        <nav id="f-navbar">
+          <ul>
+            <li><a href="#" class="current">Home</a></li>
+            <li><a href="#">Food</a></li>
+            <li><a href="#">Treats</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="three">
+        <p>follow our socials</p>
+        <div class="icons">
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"> <i class="fa-brands fa-facebook"></i></a>
+        </div>
+      </div>
+    </footer>
+    <link rel="stylesheet" href="/index.js" />
+    <script src="./main.js"></script>
   </body>
 </html>

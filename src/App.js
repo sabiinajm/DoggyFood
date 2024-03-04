@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
+import blogsData from "./blogsData";
+function createCard(blogsData) {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <Card
+      key={blogsData.id}
+      imageURL={blogsData.Image}
+      date={blogsData.dates}
+      bHeading={blogsData.bHeading}
+    />
+  );
+}
+function Card(props) {
+  return (
+    <div className=" box">
+      <img src={props.imageURL} height="300px" width="290px" />
+      <h6 className="blog-dates">{props.date}</h6>
+      <h4 className="blog-headings">{props.bHeading}</h4>
+      <button className="blog-btn">Read more</button>
     </div>
   );
 }
-
+function App() {
+  return <div className="blogBoxes">{blogsData.map(createCard)}</div>;
+}
 export default App;
